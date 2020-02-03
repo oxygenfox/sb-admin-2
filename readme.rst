@@ -10,6 +10,7 @@ git clone https://github.com/oxygenfox/sb-admin-2.git sbadmin
 Configuration
 ###################
 **• config.php**
+
 **• database.php**
 
 ###################
