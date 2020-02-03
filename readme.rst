@@ -16,59 +16,7 @@ Configuration
 Data Base Script
 ###################
 
-**User Table**
 
-```sql
-CREATE TABLE `user` (
-  `id` int(11) NOT NULL,
-  `name` varchar(128) NOT NULL,
-  `email` varchar(128) NOT NULL,
-  `image` varchar(128) NOT NULL,
-  `password` varchar(256) NOT NULL,
-  `role_id` int(11) NOT NULL,
-  `is_active` int(1) NOT NULL,
-  `date_created` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-```
-**Opsional**
-
-```sql
-INSERT INTO `user` (`id`, `name`, `email`, `image`, `password`, `role_id`, `is_active`, `date_created`) VALUES
-(1, 'admin', 'admin@owl.com', 'default.jpg', '$2y$10$uHn3q2ZP/loepfQlACOU0OKafvWJQvPfWSHpFWIZDdLRfdIvKiVRK', 1, 1, 1580744216);
-```
-
-• name as admin
-• email as admin@owl.com
-• password as admin 
-
-**User access**
-
-```sql
-CREATE TABLE `user_role` (
-  `id` int(11) NOT NULL,
-  `role` varchar(128) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-```
-
-```sql
-INSERT INTO `user_role` (`id`, `role`) VALUES
-(1, 'Administrator'),
-(2, 'Member');
-```
-
-**Requiered**
-
-```sql
-ALTER TABLE `user`
-  ADD PRIMARY KEY (`id`);
-ALTER TABLE `user_role`
-  ADD PRIMARY KEY (`id`);
-ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-ALTER TABLE `user_role`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
-COMMIT;
-```
 
 ###################
 What is CodeIgniter
