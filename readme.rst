@@ -1,10 +1,3 @@
-<h1 align="center">
-    <b>SB Admin 2</b>
-    <br>
-	<br>
-    <img src="https://raw.githubusercontent.com/oxygenfox/sb-admin-2/master/assets/img/Screenshot_20200204-010407_Chrome~2.png"/>
-	<br>
-</h1>
 
 ###################
 Instalation
